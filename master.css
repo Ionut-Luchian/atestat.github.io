@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+
+@font-face {
+     font-family: Library;
+     src: url(library-3-am/Library\ 3\ am.otf);
+}
+
+@font-face {
+     font-family: Potra;
+     src: url(potra/Potra.ttf);
+}
+
+html, body {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+}
+body {
+     cursor: default;
+     font-family: Poppins;
+     background-image: url(photos/fundalpng.png);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     position: absolute;
+     z-index: 2;
+}
+
+video{
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+}
+.sthalf{
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     z-index: -2;
+}
+.ndhalf{
+     width: 50%;
+     height: 100%;
+     left: 49%;
+     background-color: rgb(0, 0, 0);
+     position: absolute;
+     z-index: -1;
+     opacity: 96%;
+}
+
+.title{
+     font-family: Library;
+     top: 30%;
+     transform: translateY(-70%);
+     z-index: -1;
+     position: absolute;
+     left: 29%;
+}
+.title h13{
+     color: rgb(119, 119, 119);
+     font-size: 6vw;
+}
+.title h13 h17{
+     color: black;
+     animation: color-changing1 3s infinite;
+}
+.title h13 h18{
+     animation: color-changing1 3s infinite;
+}
+.content h1 {
+     font-family: Poppins;
+     font-size: 54px;
+     color: white;
+     font-weight: 700;
+     text-transform: uppercase;
+     margin-bottom: 10px;
+}
+
+.content p {
+     margin-top: 0;
+     text-align: left;
+     color: white;
+     font-weight: 400;
+}
+
+.overlay-2 {
+     z-index: 0;
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     background: black;
+}
+
+.overlay {
+     z-index: 1;
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     background: #101010;
+}
+
+.overlay p {
+     font-weight: 800;
+     font-size: 300px;
+}
+
+.screen {
+     margin-top: 17%;
+     color: #CACACA;
+     font-family: Poppins;
+     position: absolute;
+     top: 12%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     opacity: 25%;
+     animation: color-changing 3s infinite;
+}
+
+.overlay .author{
+     color: #434343;
+     font-family: 'Akaya Kanadaka', cursive;
+     position: absolute;
+     right: 1%;
+     bottom: 0%;
+     font-size: 25px;
+     animation: color-changing 3s infinite;
+}
+
+.myBtn {
+     font-family: Poppins;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+button {
+     display: block;
+     padding: 24px 48px;
+     font-family: Poppins;
+     font-weight: 700;
+     font-size: 12px;
+     letter-spacing: 6px;
+     color: #fff;
+     border: 2px solid #fff;
+     text-transform: uppercase;
+     outline: none;
+     overflow: hidden;
+     background: none;
+     z-index: 1;
+     cursor: crosshair;
+     transition: 0.8s ease-out;
+}
+
+.myBtn:hover {
+     color: #101010;
+     cursor: crosshair;
+}
+
+.myBtn:before {
+     content: "";
+     position: absolute;
+     background: #fff;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: 100%;
+     z-index: -1;
+     transition: top 0.8s ease-out;
+}
+
+.myBtn:hover:before {
+     top: 0;
+}
+
+.logo{
+     left: 1.5%;
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     height: 20vw;
+     width: 20vw;
+     cursor: pointer;
+}
+
+nav{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     min-height: 8vh;
+     
+}
+.nav-links{
+     margin-left: 40%;
+     display: flex;
+     justify-content: space-around;
+     width: 40%;
+     margin-right: -7%;
+}
+.nav-links li{
+     list-style: none;
+     display: inline-block;
+}
+.nav-links a{
+     font-family: Potra;
+     color: rgb(201, 201, 201);
+     text-decoration: none;
+     letter-spacing: 2px;
+     font-weight: bold;
+     font-size: 17px;
+}
+.cool-link::after{
+     content: '';
+     display: block;
+     width: 0;
+     height: 2px;
+     background: rgb(201, 201, 201);
+     transition: width .3s;
+}
+.cool-link:hover::after{
+     width: 100%;
+     transition: width .3s;
+}
+
+
+.sidebar{
+     background: linear-gradient(rgb(0, 0, 0),rgb(201, 201, 201),black);
+     height: 100%;
+     width: 3%;
+     display: flex;
+     align-items: center;
+     position: absolute;
+     top: 0%;
+     right: 0%;
+     backdrop-filter: blur(3px);
+}
+
+
+
+
+#photo{
+     height: 35px;
+     width: 35px;
+     cursor: pointer;
+     margin: 20px auto;
+}
+
+
+
+.social-links2 {
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+}
+
+
+
+
+.logo1{
+     position: absolute;
+     width: 40px;
+     height: 20;
+     margin-left: -5%;
+     margin-top: 0.6vh;
+}
+
+
+
+.lowcon{
+     position: absolute;
+     height: 60px;
+     width: 250px;
+     bottom: 7%;
+     right: 0%;
+     z-index: -1;
+}
+.lowcon h12{
+     margin-left: -130px;
+     position: absolute;
+     color: #fff;
+     margin-top: -30px;
+     font-family: 'Akaya Kanadaka', cursive;
+}
+
+
+
+.testimg1{
+     margin-left: -150px;
+     display: flex;
+     justify-content: space-evenly;
+     position: absolute;
+     width: 70px;
+     height: 70px;
+     animation: float 20s infinite;
+     animation-iteration-count: infinite;
+     cursor: crosshair;
+ }
+ .testimg2{
+     margin-left: 1%;
+     display: flex;
+     justify-content: space-evenly;
+     position: absolute;
+     width: 150px;
+     height: 50px;
+     animation: float 15s infinite;
+     animation-iteration-count: infinite;
+     cursor: crosshair;
+ }
+
+ @keyframes color-changing{
+      0%{
+          color: #CACACA;
+      }
+      50%{
+          color: gray;
+      }
+      100%{
+          color: #CACACA;
+      }
+ }
+
+ @keyframes color-changing1{
+     0%{
+         color: rgb(201, 201, 201);
+     }
+     50%{
+         color: rgb(0, 0, 0);
+     }
+     100%{
+         color: rgb(201, 201, 201);
+     }
+}
+
+ @keyframes float{
+     0%{
+         margin-top: 1%;
+     }
+     12%{
+          margin-top: 12%;
+     }
+     25%{
+         margin-top: 21%;
+     }
+     37%{
+          margin-top: 13%;
+     }
+     50%{
+         margin-top: 1%;
+     }
+     62%{
+          margin-top: 12%;
+     }
+     75%{
+          margin-top: 21%;
+     }
+     87%{
+          margin-top: 12%;
+     }
+     100%{
+         margin-top: 1%;
+     }
+}
+
+.content1{
+     position: absolute;
+     color: rgb(201, 201, 201);
+     left: 50%;
+     top: 50%;
+}
+.content1 h20{
+     font-family: Library;
+     font-size: 2.4vw;
+     margin-left: 10%;
+}
+.content1 p{
+     margin-top: 6%;
+}

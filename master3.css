@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Library;
+    src: url(library-3-am/Library\ 3\ am.otf);
+}
+
+@font-face {
+    font-family: Potra;
+    src: url(potra/Potra.ttf);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Poppins;
+    background-image: url(photos/bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #161616;
+    animation: slide-out-container 4s cubic-bezier(0.97, 0.01, 0.36, 0.99) 2.8s;
+    animation-fill-mode: forwards;
+}
+
+.text-wrapper {
+    color: white;
+    position: absolute;
+}
+
+.text {
+    font-family: Poppins;
+    font-weight: lighter;
+    font-size: 60px;
+}
+
+.text-1,
+.text-3,
+.text-4,
+.text-8,
+.text-9,
+.text-11 {
+    color: rgba(255, 4, 4, 0);
+    -webkit-text-stroke: 1px white;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0%;
+    }
+    1% {
+        opacity: 100%;
+    }
+    99% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.text-1 {
+    animation: blink 0.8s linear 0.9s, blink 0.8s linear 2s;
+    opacity: 0;
+}
+
+.text-2 {
+    animation: blink 0.8s linear 0.8s, blink 0.8s linear 2.1s;
+    opacity: 0;
+}
+
+.text-3 {
+    animation: blink 0.8s linear 0.7s, blink 0.8s linear 2.2s;
+    opacity: 0;
+}
+
+.text-4 {
+    animation: blink 0.8s linear 0.6s, blink 0.8s linear 2.3s;
+    opacity: 0;
+}
+
+.text-5 {
+    animation: blink 0.8s linear 0.5s, blink 0.8s linear 2.4s;
+    opacity: 0;
+}
+
+.text-6 {
+    animation: blink 0.8s linear 0.4s, blink 0.8s linear 2.5s, slide-out 1s linear 3.2s;
+    opacity: 0;
+}
+
+.text-7 {
+    animation: blink 0.8s linear 0.5s, blink 0.8s linear 2.4s;
+    opacity: 0;
+}
+
+.text-8 {
+    animation: blink 0.8s linear 0.6s, blink 0.8s linear 2.3s;
+    opacity: 0;
+}
+
+.text-9 {
+    animation: blink 0.8s linear 0.7s, blink 0.8s linear 2.2s;
+    opacity: 0;
+}
+
+.text-10 {
+    animation: blink 0.8s linear 0.8s, blink 0.8s linear 2.1s;
+    opacity: 0;
+}
+
+.text-11 {
+    animation: blink 0.8s linear 0.9s, blink 0.8s linear 2s;
+    opacity: 0;
+}
+
+@keyframes slide-out {
+    0% {
+        opacity: 0%;
+    }
+    1% {
+        opacity: 100%;
+    }
+
+    19% {
+        opacity: 100%;
+    }
+    20% {
+        opacity: 0%;
+    }
+
+    39% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 100%;
+    }
+
+    59% {
+        opacity: 100%;
+    }
+    60% {
+        opacity: 0%;
+    }
+
+    79% {
+        opacity: 0%;
+    }
+    80% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes slide-out-container {
+    0% {
+        height: 100vh;
+    }
+
+    40% {
+        height: 100vh;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    
+}
+.nav-links{
+    margin-left: 50%;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-right: -7%;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-links a{
+    font-family: Potra;
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(201, 201, 201);
+    transition: width .3s;
+}
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.logo1{
+    position: absolute;
+    width: 40px;
+    height: 20;
+    margin-left: 1%;
+    margin-top: 0.6vh;
+}
+
+.title1{
+    font-size: 4vw;
+    position: absolute;
+    top: 40%;
+    left: 17vw;
+    text-transform: uppercase;
+    color: rgb(201, 201, 201);
+    font-family: Library;
+    animation: color-changing1 3s infinite;
+}
+
+.content{
+    top: 100%;
+    position: absolute;
+    width: 99vw;
+}
+.content1{
+    position: absolute;
+    opacity: 40%;
+    left: 10vw;
+    background-color: rgb(85, 85, 85);
+    width: 80vw;
+    height: 165vh;
+}
+.content-text{
+    position: absolute;
+    color: white;
+    font-size: 1vw;
+    left: 10.5vw;
+    right: 9.3vw;
+}
+
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+.img1{
+    float: right;
+    padding: 4px;
+    height: 10vw;
+}
+
+.img2{
+    float: inline-start;
+    padding: 4px;
+    height: 10vw;
+    margin-left: 30vw;
+}
+
+.img3{
+    margin-top: 3vw;
+    float: left;
+    padding: 4px;
+    height: 16.5vw;
+    width: 30vw;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+   border-radius: 10px;
+ }
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: rgb(0, 0, 0); 
+   border-radius: 10px;
+ }
+  
+/* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3; 
+}
+
+@keyframes color-changing1{
+    0%{
+        color: rgb(201, 201, 201);
+    }
+    50%{
+        color: rgb(0, 0, 0);
+    }
+    100%{
+        color: rgb(201, 201, 201);
+    }
+}
+
